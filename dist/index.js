@@ -9,11 +9,12 @@ var querystring = require('querystring');
 module.exports = function (appId, appSecret) {
     var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 
-    var isPathMatch = options.pathPattern ? options.pathPattern.test(req.path) : true;
     var expireInSeconds = Number(options.expireInSeconds) ? Number(options.expireInSeconds) : 60 * 60 * 2;
     var key = options.key || '__jwtsignature';
 
     return function (req, res, next) {
+        var isPathMatch = options.pathPattern ? options.pathPattern.test(req.path) : true;
+
         if (isPathMatch) {
             var timeInSeconds = Math.round(Date.now() / 1000);
             var token = jwt.sign({
