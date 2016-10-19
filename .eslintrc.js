@@ -1,0 +1,37 @@
+module.exports = {
+    env: {
+        es6: true,
+        browser: true,
+        node: true,
+        mocha: true,
+    },
+    rules: {
+        strict: [0, 'global'],
+        'comma-dangle': 'off',  // not sure why airbnb turned this on. gross!
+        indent: ['error', 4, { SwitchCase: 1 }],
+        'max-len': ['error', 300, 4],
+        'vars-on-top': 'off',
+        'no-console': 'off',
+        'no-alert': 'off',
+        'consistent-return': 'off',
+        'padded-blocks': 'off',
+        'object-shorthand': 'off',
+        'prefer-arrow-callback': 'off',
+        'func-names': 'off',
+        'one-var': 'off',
+        'no-shadow': 'off',
+        'no-param-reassign': 'off',
+        'import/no-unresolved': 'off',
+        'import/no-extraneous-dependencies': 'off',
+    },
+    globals: {
+        __DEVELOPMENT__: true,
+        __CLIENT__: true,
+        __SERVER__: true,
+        __DISABLE_SSR__: true,
+        __DEVTOOLS__: true,
+        sentry: true,
+        socket: true,
+        webpackIsomorphicTools: true,
+    },
+};
