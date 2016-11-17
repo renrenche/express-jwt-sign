@@ -1,6 +1,6 @@
 {
   "name": "express-jwt-sign",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "jwt signature generator for express",
   "homepage": "",
   "author": {
