@@ -14,7 +14,7 @@ $ npm install --save express-jwt-sign
 const express = require('express');
 const jwtsign = require('express-jwt-sign');
 const appId = 'fe/star';
-const appSecret = 'xxx';    // 这两个参数找王仕军开放
+const appSecret = 'xxx';    // 这两个参数需要保密
 
 const app = express();
 app.use(jwtsign(appId, appSecret, {

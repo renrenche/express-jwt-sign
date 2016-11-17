@@ -6,7 +6,7 @@
   "author": {
     "name": "wangshijun",
     "email": "wangshijun@renrenche.com",
-    "url": ""
+    "url": "https://github.com/wangshijun"
   },
   "files": [
     "dist"
@@ -47,7 +47,7 @@
       "mocha": true
     }
   },
-  "repository": "git@gitlab.renrenche.com:fe/express-jwt-sign.git",
+  "repository": "https://github.com/renrenche/express-jwt-sign.git",
   "scripts": {
     "release:patch": "npm version patch && git push && git push --tags",
     "release:minor": "npm version minor && git push && git push --tags",
